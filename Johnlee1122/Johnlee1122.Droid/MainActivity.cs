@@ -12,7 +12,7 @@ namespace Johnlee1122.Droid
 	[Activity (Label = "Johnlee1122.Droid", MainLauncher = true, Icon = "@drawable/icon")]
 	public class MainActivity : Activity
 	{
-		int count = 1;
+		
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -23,13 +23,16 @@ namespace Johnlee1122.Droid
 
 			// Get our button from the layout resource,
 			// and attach an event to it
-			Button button = FindViewById<Button> (Resource.Id.myButton);
-			
-			button.Click += delegate {
-				button.Text = string.Format ("{0} clicks!", count++);
-			};
-		}
-	}
+			var _txtAccount = FindViewById<EditText> (Resource.Id.loginflow_loginview_txtaccount);
+
+            var _txtPassword = FindViewById<EditText>(Resource.Id.loginflow_loginview_txtpassword);
+
+
+            var myButton = FindViewById<Button>(Resource.Id.myButton);
+            myButton.Click += (object sender, EventArgs e) => { };
+
+        }
+    }
 }
 
 
