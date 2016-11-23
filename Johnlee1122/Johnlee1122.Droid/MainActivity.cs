@@ -18,18 +18,18 @@ namespace Johnlee1122.Droid
 		{
 			base.OnCreate (bundle);
 
-			// Set our view from the "main" layout resource
-			SetContentView (Resource.Layout.Main);
+            // Set our view from the "main" layout resource
+            SetContentView(Resource.Layout.loginflow_loginview);
 
 			// Get our button from the layout resource,
 			// and attach an event to it
-			var _txtAccount = FindViewById<EditText> (Resource.Id.loginflow_loginview_txtaccount);
+			var txtAccount = FindViewById<EditText> (Resource.Id.loginflow_loginview_txtaccount);
 
-            var _txtPassword = FindViewById<EditText>(Resource.Id.loginflow_loginview_txtpassword);
+            var txtPassword = FindViewById<EditText>(Resource.Id.loginflow_loginview_txtpassword);
 
 
-            var myButton = FindViewById<Button>(Resource.Id.myButton);
-            myButton.Click += (object sender, EventArgs e) => { };
+            var btnLogin = FindViewById<Button>(Resource.Id.loginflow_loginview_btnlogin);
+            btnLogin.Click += (object sender, EventArgs e) => {  };
 
         }
     }

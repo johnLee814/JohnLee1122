@@ -69,6 +69,9 @@ namespace Johnlee1122.Droid
 			// aapt resource value: 0x7f050001
 			public const int loginflow_loginview_txtpassword = 2131034113;
 			
+			// aapt resource value: 0x7f050004
+			public const int loginflow_mywebview_btnGo = 2131034116;
+			
 			// aapt resource value: 0x7f050003
 			public const int myButton = 2131034115;
 			
@@ -90,6 +93,9 @@ namespace Johnlee1122.Droid
 			
 			// aapt resource value: 0x7f030001
 			public const int Main = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int webflow_mywebview = 2130903042;
 			
 			static Layout()
 			{
