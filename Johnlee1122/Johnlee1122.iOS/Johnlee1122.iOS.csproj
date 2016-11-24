@@ -135,6 +135,7 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
+    <InterfaceDefinition Include="WebFlow\DetailViewViewController.xib" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cell\UserVIewCell.cs" />
@@ -152,6 +153,10 @@
     <Compile Include="ViewController.cs" />
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebFlow\DetailViewController.cs" />
+    <Compile Include="WebFlow\DetailViewController.designer.cs">
+      <DependentUpon>DetailViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="WebFlow\MyWebViewController.cs" />
     <Compile Include="WebFlow\MyWebViewController.designer.cs">

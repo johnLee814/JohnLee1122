@@ -60,6 +60,9 @@ namespace Johnlee1122.Droid
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f050008
+			public const int detailview_lbName = 2131034120;
+			
 			// aapt resource value: 0x7f050002
 			public const int loginflow_loginview_btnlogin = 2131034114;
 			
@@ -69,11 +72,26 @@ namespace Johnlee1122.Droid
 			// aapt resource value: 0x7f050001
 			public const int loginflow_loginview_txtpassword = 2131034113;
 			
-			// aapt resource value: 0x7f050004
-			public const int loginflow_mywebview_btnGo = 2131034116;
+			// aapt resource value: 0x7f050007
+			public const int loginflow_mywebview_btnGo = 2131034119;
 			
 			// aapt resource value: 0x7f050003
 			public const int myButton = 2131034115;
+			
+			// aapt resource value: 0x7f050004
+			public const int myListView = 2131034116;
+			
+			// aapt resource value: 0x7f050006
+			public const int myListView_itemview_txtDescription = 2131034118;
+			
+			// aapt resource value: 0x7f050005
+			public const int myListView_itemview_txtName = 2131034117;
+			
+			// aapt resource value: 0x7f05000a
+			public const int webview_menuview_txtDescription = 2131034122;
+			
+			// aapt resource value: 0x7f050009
+			public const int webview_menuview_txtName = 2131034121;
 			
 			static Id()
 			{
@@ -95,7 +113,19 @@ namespace Johnlee1122.Droid
 			public const int Main = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int webflow_mywebview = 2130903042;
+			public const int menulayout = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int myclass_listview_itemview = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int webflow_mywebview = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int webview_detailview = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int webview_menuview = 2130903046;
 			
 			static Layout()
 			{

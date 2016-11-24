@@ -14,7 +14,7 @@ namespace Johnlee1122.iOS.Cell
 
         public void UpdateUI(User user)
         {
-
+            
         }
     }
 }
