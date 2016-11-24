@@ -5,24 +5,26 @@
 
 
   <Button
-      android:id="@+id/loginflow_mywebview_btnGo"
-      android:layout_width="60dp"
-      android:layout_height="30dp"
-      android:layout_alignParentRight="true"
-      android:layout_alignParentBottom="true"
-      android:text="Go!"
-        />
+       android:id="@+id/webflow_webview_btngo"
+       android:text="GO"
+       android:layout_width="70dp"
+       android:layout_height="40dp"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentRight="true" />
 
   <EditText
-      android:layout_width="match_parent"
-      android:layout_height="30dp"
-      android:layout_toLeftOf="@+id/loginflow_mywebview_btnGo"
+      android:id="@+id/webflow_webview_txturl"
       android:layout_alignParentBottom="true"
-        />
-  <WebView
+      android:layout_toLeftOf="@id/webflow_webview_btngo"
       android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:layout_above="@id/loginflow_mywebview_btnGo"
-    ></WebView>
+      android:layout_height="40dp" />
+
+  <WebView
+      android:id="@+id/webflow_webview_viewweb"
+      android:layout_above="@id/webflow_webview_txturl"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+  </WebView>
 
 </RelativeLayout>

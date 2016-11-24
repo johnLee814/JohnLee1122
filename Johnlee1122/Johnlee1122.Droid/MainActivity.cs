@@ -8,6 +8,11 @@ using Android.Widget;
 using Android.OS;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+using Android.Webkit;
+using Java.Util.Regex;
+using System.Text.RegularExpressions;
+using Java.Interop;
+
 
 namespace Johnlee1122.Droid
 {
@@ -38,9 +43,20 @@ namespace Johnlee1122.Droid
                 StartActivity(nextActivity);
             };
 
-       
+            var btnWebview = FindViewById<Button>(Resource.Id.loginflow_loginview_btnwebview);
+            btnWebview.Click += (object sender, EventArgs e) =>
+            {
+                Intent nextActivity = new Intent(this, typeof(WebViewActivity));
+
+                StartActivity(nextActivity);
+            };
 
         }
+
+
+        
+
+       
 
     }
 }

@@ -60,11 +60,14 @@ namespace Johnlee1122.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050008
-			public const int detailview_lbName = 2131034120;
+			// aapt resource value: 0x7f05000b
+			public const int detailview_lbName = 2131034123;
 			
 			// aapt resource value: 0x7f050002
 			public const int loginflow_loginview_btnlogin = 2131034114;
+			
+			// aapt resource value: 0x7f050003
+			public const int loginflow_loginview_btnwebview = 2131034115;
 			
 			// aapt resource value: 0x7f050000
 			public const int loginflow_loginview_txtaccount = 2131034112;
@@ -72,26 +75,32 @@ namespace Johnlee1122.Droid
 			// aapt resource value: 0x7f050001
 			public const int loginflow_loginview_txtpassword = 2131034113;
 			
-			// aapt resource value: 0x7f050007
-			public const int loginflow_mywebview_btnGo = 2131034119;
-			
-			// aapt resource value: 0x7f050003
-			public const int myButton = 2131034115;
-			
 			// aapt resource value: 0x7f050004
-			public const int myListView = 2131034116;
-			
-			// aapt resource value: 0x7f050006
-			public const int myListView_itemview_txtDescription = 2131034118;
+			public const int myButton = 2131034116;
 			
 			// aapt resource value: 0x7f050005
-			public const int myListView_itemview_txtName = 2131034117;
+			public const int myListView = 2131034117;
 			
-			// aapt resource value: 0x7f05000a
-			public const int webview_menuview_txtDescription = 2131034122;
+			// aapt resource value: 0x7f050007
+			public const int myListView_itemview_txtDescription = 2131034119;
+			
+			// aapt resource value: 0x7f050006
+			public const int myListView_itemview_txtName = 2131034118;
+			
+			// aapt resource value: 0x7f050008
+			public const int webflow_webview_btngo = 2131034120;
 			
 			// aapt resource value: 0x7f050009
-			public const int webview_menuview_txtName = 2131034121;
+			public const int webflow_webview_txturl = 2131034121;
+			
+			// aapt resource value: 0x7f05000a
+			public const int webflow_webview_viewweb = 2131034122;
+			
+			// aapt resource value: 0x7f05000d
+			public const int webview_menuview_txtDescription = 2131034125;
+			
+			// aapt resource value: 0x7f05000c
+			public const int webview_menuview_txtName = 2131034124;
 			
 			static Id()
 			{
