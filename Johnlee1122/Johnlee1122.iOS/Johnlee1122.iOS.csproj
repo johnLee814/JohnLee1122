@@ -61,6 +61,9 @@
     <MtouchDebug>true</MtouchDebug>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v7.0\Mono.Android.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -135,10 +138,25 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
-    <InterfaceDefinition Include="WebFlow\DetailViewViewController.xib" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CallNativeFunctionViewController.cs" />
+    <Compile Include="CallNativeFunctionViewController.designer.cs">
+      <DependentUpon>CallNativeFunctionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CallPageFunctonViewController.cs" />
+    <Compile Include="CallPageFunctonViewController.designer.cs">
+      <DependentUpon>CallPageFunctonViewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cell\UserVIewCell.cs" />
+    <Compile Include="LoadLocalHTMLViewController.cs" />
+    <Compile Include="LoadLocalHTMLViewController.designer.cs">
+      <DependentUpon>LoadLocalHTMLViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadRemoteWebViewController.cs" />
+    <Compile Include="LoadRemoteWebViewController.designer.cs">
+      <DependentUpon>LoadRemoteWebViewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginFlow\LoginViewController.cs" />
     <Compile Include="LoginFlow\LoginViewController.designer.cs">
       <DependentUpon>LoginViewController.cs</DependentUpon>
@@ -165,6 +183,10 @@
     <Compile Include="WebFlow\ViewController1.cs" />
     <Compile Include="WebFlow\ViewController1.designer.cs">
       <DependentUpon>ViewController1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebViewViewController1.cs" />
+    <Compile Include="WebViewViewController1.designer.cs">
+      <DependentUpon>WebViewViewController1.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
