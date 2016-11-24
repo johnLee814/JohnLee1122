@@ -46,7 +46,7 @@ namespace Johnlee1122.Droid
                 RunOnUiThread(() => {
 
                     //AndHUD.Shared.Dismiss(this);
-
+                    Debug.WriteLine("WebViewLoad");
                 });
 
             };
@@ -173,11 +173,13 @@ namespace Johnlee1122.Droid
 
                 if (null != handler)
                 {
-                    handler(this,
-                        new CallFromPageReceivedEventArgs
-                        {
-                            Result = parameter
-                        });
+                    //handler(this,
+                    //    new CallFromPageReceivedEventArgs
+                    //    {
+                    //        Result = parameter
+                    //    });
+
+                    Debug.Write("WebView");
                 }
             }
 
