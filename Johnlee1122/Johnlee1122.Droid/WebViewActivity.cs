@@ -1,19 +1,13 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 using System.Text.RegularExpressions;
 using Android.Webkit;
-using Foundation;
 using Debug = System.Diagnostics.Debug;
-using Java.Interop;
+using Android.Views.InputMethods;
 
 namespace Johnlee1122.Droid
 {
@@ -37,8 +31,8 @@ namespace Johnlee1122.Droid
 
             client.WebViewLocaitonChanged += (object sender, ContentWebViewClient.WebViewLocaitonChangedEventArgs e) => {
 
-                Debug.WriteLine(e.CommandString);
-
+                //Debug.WriteLine(e.CommandString);
+                Debug.WriteLine("WebViewLoad");
             };
 
             client.WebViewLoadCompleted += (object sender, ContentWebViewClient.WebViewLoadCompletedEventArgs e) => {
@@ -65,14 +59,15 @@ namespace Johnlee1122.Droid
 
             MyWebView.AddJavascriptInterface(myJSInterface, "TP");
             myJSInterface.CallFromPageReceived += delegate (object sender, MyJSInterface.CallFromPageReceivedEventArgs e) {
-                Debug.WriteLine(e.Result);
+                Debug.WriteLine("WebView");
+                //Debug.WriteLine(e.Result);
             };
 
             // ­t³d»P­¶­±·¾³q - Native -> WebView
             JavaScriptResult callResult = new JavaScriptResult();
             callResult.JavaScriptResultReceived += (object sender, JavaScriptResult.JavaScriptResultReceivedEventArgs e) => {
-
-                Debug.WriteLine(e.Result);
+                Debug.WriteLine("WebView");
+                //Debug.WriteLine(e.Result);
             };
 
 
