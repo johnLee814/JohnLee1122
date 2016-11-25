@@ -31,8 +31,7 @@ namespace Johnlee1122.Droid
 
             client.WebViewLocaitonChanged += (object sender, ContentWebViewClient.WebViewLocaitonChangedEventArgs e) => {
 
-                //Debug.WriteLine(e.CommandString);
-                Debug.WriteLine("WebViewLoad");
+                Debug.WriteLine(e.CommandString);      
             };
 
             client.WebViewLoadCompleted += (object sender, ContentWebViewClient.WebViewLoadCompletedEventArgs e) => {
@@ -59,15 +58,16 @@ namespace Johnlee1122.Droid
 
             MyWebView.AddJavascriptInterface(myJSInterface, "TP");
             myJSInterface.CallFromPageReceived += delegate (object sender, MyJSInterface.CallFromPageReceivedEventArgs e) {
-                Debug.WriteLine("WebView");
-                //Debug.WriteLine(e.Result);
+
+                //MyWebView.LoadUrl("http://developer.xamarin.com");
+
+                Debug.WriteLine(e.Result);
             };
 
             // ­t³d»P­¶­±·¾³q - Native -> WebView
             JavaScriptResult callResult = new JavaScriptResult();
             callResult.JavaScriptResultReceived += (object sender, JavaScriptResult.JavaScriptResultReceivedEventArgs e) => {
-                Debug.WriteLine("WebView");
-                //Debug.WriteLine(e.Result);
+                Debug.WriteLine(e.Result);
             };
 
 
@@ -168,13 +168,11 @@ namespace Johnlee1122.Droid
 
                 if (null != handler)
                 {
-                    //handler(this,
-                    //    new CallFromPageReceivedEventArgs
-                    //    {
-                    //        Result = parameter
-                    //    });
-
-                    Debug.Write("WebView");
+                    handler(this,
+                        new CallFromPageReceivedEventArgs
+                        {
+                            Result = parameter
+                        });
                 }
             }
 
