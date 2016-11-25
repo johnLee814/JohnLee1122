@@ -29,4 +29,12 @@
       android:layout_height="60dp"
       android:layout_marginTop="40dp"
       android:text="OpenWebView" />
+
+  <Button
+    android:id="@+id/loginflow_loginview_btnmapview"
+    android:layout_below="@+id/loginflow_loginview_btnwebview"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="40dp"
+    android:text="OpenMapView" />
 </RelativeLayout>
